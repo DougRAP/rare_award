@@ -1,0 +1,12 @@
+{
+  "name": "rare_award",
+  "version": "1.0.0",
+  "description": "R.A.R.E. Award static website with Netlify functions.",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  },
+  "keywords": [],
+  "author": "Doug Wright",
+  "license": "MIT"
+}
