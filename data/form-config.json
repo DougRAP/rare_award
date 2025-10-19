@@ -1,0 +1,9 @@
+{
+  "steps": [
+    { "id": 1, "title": "Nominee", "fields": ["nominee_name", "department", "relationship"] },
+    { "id": 2, "title": "Story", "fields": ["story"] },
+    { "id": 3, "title": "Qualities", "fields": ["qualities"] },
+    { "id": 4, "title": "Attachments", "fields": ["supporting_file"] }
+  ],
+  "departments": ["Engineering","Sales","Marketing","HR","Finance","Operations","Customer-Service","Product","Design","Other"]
+}

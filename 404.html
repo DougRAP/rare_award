@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Page Not Found - 404 | R.A.R.E. Award</title>
+    <meta name="description" content="The page you're looking for seems to be missing. Let's get you back on track.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 404 Page Content -->
+    <div class="min-h-screen flex items-center justify-center bg-gradient-primary p-4">
+        <div class="max-w-2xl w-full text-center">
+            <!-- 404 Illustration -->
+            <div class="mb-8 animate-float">
+                <svg class="w-64 h-64 mx-auto text-white/20" viewBox="0 0 200 200" fill="currentColor">
+                    <!-- Star (broken/incomplete) -->
+                    <path d="M100 20 L115 60 L160 60 L125 85 L135 125 L100 100 L65 125 L75 85 L40 60 L85 60 Z" 
+                          stroke="currentColor" 
+                          stroke-width="2" 
+                          fill="none"
+                          stroke-dasharray="5,5"
+                          opacity="0.5"/>
+                    
+                    <!-- 404 Text in center -->
+                    <text x="100" y="85" text-anchor="middle" font-size="48" font-weight="bold" fill="white" opacity="0.8">404</text>
+                    
+                    <!-- Question marks floating around -->
+                    <text x="30" y="40" font-size="24" fill="white" opacity="0.3" class="animate-pulse">?</text>
+                    <text x="160" y="100" font-size="20" fill="white" opacity="0.4" class="animate-pulse" style="animation-delay: 0.5s">?</text>
+                    <text x="50" y="140" font-size="18" fill="white" opacity="0.3" class="animate-pulse" style="animation-delay: 1s">?</text>
+                </svg>
+            </div>
+            
+            <!-- Error Message -->
+            <div class="card shadow-2xl animate-fadeInUp">
+                <div class="card-body p-12">
+                    <h1 class="h2 text-navy mb-4">This Page Seems R.A.R.E...</h1>
+                    
+                    <p class="text-xl text-gray-700 mb-2">
+                        ...So rare, in fact, that it doesn't exist!
+                    </p>
+                    
+                    <p class="text-gray-600 mb-8">
+                        The page you're looking for might have been moved, renamed, or is temporarily unavailable.
+                    </p>
+                    
+                    <!-- Error Details -->
+                    <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                        <p class="font-mono text-sm text-gray-600 mb-2">Error Code: 404</p>
+                        <p class="font-mono text-xs text-gray-500">
+                            Requested URL: <span id="requestedURL" class="text-gray-700"></span>
+                        </p>
+                    </div>
+                    
+                    <!-- Helpful Links -->
+                    <div class="mb-8">
+                        <h2 class="font-semibold text-navy mb-4">Here are some helpful links:</h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <a href="index.html" class="card hover-lift">
+                                <div class="card-body p-4 flex items-center">
+                                    <svg class="w-8 h-8 text-gold mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                                    </svg>
+                                    <div class="text-left">
+                                        <p class="font-semibold text-navy">Homepage</p>
+                                        <p class="text-sm text-gray-600">Return to the main page</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="nominate.html" class="card hover-lift">
+                                <div class="card-body p-4 flex items-center">
+                                    <svg class="w-8 h-8 text-gold mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <div class="text-left">
+                                        <p class="font-semibold text-navy">Nominate</p>
+                                        <p class="text-sm text-gray-600">Submit a nomination</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="policy.html" class="card hover-lift">
+                                <div class="card-body p-4 flex items-center">
+                                    <svg class="w-8 h-8 text-gold mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+                                    </svg>
+                                    <div class="text-left">
+                                        <p class="font-semibold text-navy">Policy</p>
+                                        <p class="text-sm text-gray-600">View award guidelines</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="index.html#winners" class="card hover-lift">
+                                <div class="card-body p-4 flex items-center">
+                                    <svg class="w-8 h-8 text-gold mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 1 1 0 000 2H6a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2a1 1 0 100-2 2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"/>
+                                    </svg>
+                                    <div class="text-left">
+                                        <p class="font-semibold text-navy">Winners</p>
+                                        <p class="text-sm text-gray-600">View past recipients</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Bar -->
+                    <div class="mb-8">
+                        <p class="text-sm text-gray-600 mb-3">Or try searching for what you need:</p>
+                        <form class="flex gap-2" onsubmit="handleSearch(event)">
+                            <input 
+                                type="text" 
+                                placeholder="Search the R.A.R.E. Award site..." 
+                                class="form-input flex-1"
+                                id="searchInput"
+                            >
+                            <button type="submit" class="btn btn-primary">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Support -->
+                    <div class="border-t pt-6">
+                        <p class="text-sm text-gray-600 mb-3">Still can't find what you're looking for?</p>
+                        <a href="mailto:rare.award@rap.com" class="btn btn-outline-primary">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            Contact Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fun Easter Egg -->
+            <div class="mt-8 text-white/60 text-sm">
+                <p>Fun fact: Even though this page doesn't exist, you're still exceptional! 🌟</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* 404 page specific animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(-2deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+
+    <script>
+        // Display the requested URL
+        document.getElementById('requestedURL').textContent = window.location.pathname;
+
+        // Handle search
+        function handleSearch(event) {
+            event.preventDefault();
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            
+            // Simple routing based on search terms
+            if (searchTerm.includes('nominate') || searchTerm.includes('nomination')) {
+                window.location.href = 'nominate.html';
+            } else if (searchTerm.includes('policy') || searchTerm.includes('guidelines')) {
+                window.location.href = 'policy.html';
+            } else if (searchTerm.includes('winner') || searchTerm.includes('recipient')) {
+                window.location.href = 'index.html#winners';
+            } else if (searchTerm.includes('criteria') || searchTerm.includes('qualify')) {
+                window.location.href = 'index.html#criteria';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Track 404 errors (you would send this to your analytics)
+        console.log('404 Error logged for:', window.location.pathname);
+    </script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>R.A.R.E. Award - Recognizing Acts of Remarkable Excellence | RAP</title>
+    <meta name="description" content="The R.A.R.E. Award honors exceptional RAP employees who demonstrate remarkable integrity, compassion, and commitment. Quarterly recognition up to $5,000.">
+    <meta name="keywords" content="R.A.R.E. Award, employee recognition, RAP, remarkable excellence, quarterly award">
+    <meta name="author" content="RAP Company">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="R.A.R.E. Award - Recognizing Acts of Remarkable Excellence">
+    <meta property="og:description" content="Nominate exceptional colleagues who embody the best of RAP's values">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://rareaward.rap.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="R.A.R.E. Award - Recognizing Acts of Remarkable Excellence">
+    <meta name="twitter:description" content="Nominate exceptional colleagues who embody the best of RAP's values">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span class="announcement-text">
+            🏆 Q1 2025 Nominations Now Open! Submit by March 31st
+            <a href="nominate.html" class="announcement-link">Nominate Now →</a>
+        </span>
+        <button class="announcement-close" aria-label="Close announcement">✕</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header header-transparent">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <div class="header-logo-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10 L60 40 L90 40 L65 55 L75 85 L50 65 L25 85 L35 55 L10 40 L40 40 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="header-logo-text">
+                    <div class="header-logo-title">R.A.R.E.</div>
+                    <div class="header-logo-subtitle">Award for Remarkable Excellence</div>
+                </div>
+            </a>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#criteria" class="nav-link">Criteria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#winners" class="nav-link">Winners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="policy.html" class="nav-link">Policy</a>
+                    </li>
+                </ul>
+                
+                <div class="header-actions">
+                    <a href="nominate.html" class="header-cta">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.5 5 5.5 1-4 4 1 5.5-5-2.5-5 2.5 1-5.5-4-4 5.5-1z"/>
+                        </svg>
+                        Nominate Someone
+                    </a>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+        <div class="header-progress" id="scrollProgress"></div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-particles" id="particles"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content hero-center">
+                <span class="hero-badge animate-fadeInDown">
+                    <svg class="hero-badge-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2l2.5 5 5.5 1-4 4 1 5.5-5-2.5-5 2.5 1-5.5-4-4 5.5-1z"/>
+                    </svg>
+                    Quarterly Recognition
+                </span>
+                
+                <h1 class="hero-title">
+                    Recognizing <span class="hero-highlight">Remarkable</span> Excellence
+                </h1>
+                
+                <p class="hero-subtitle">
+                    The R.A.R.E. Award honors those exceptional individuals whose actions embody the very best of who we are
+                </p>
+                
+                <p class="hero-description">
+                    When integrity meets compassion, when commitment transcends expectation, when character shines brightest in adversity — that's R.A.R.E.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="nominate.html" class="hero-btn hero-btn-primary">
+                        <span>Nominate a Colleague</span>
+                        <svg class="hero-btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                        </svg>
+                    </a>
+                    <a href="#about" class="hero-btn hero-btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">$5,000</div>
+                        <div class="hero-stat-label">Max Award</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">4</div>
+                        <div class="hero-stat-label">Annual Winners</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">∞</div>
+                        <div class="hero-stat-label">Impact</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="hero-scroll-mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="h2 mb-4">What Makes Someone R.A.R.E.?</h2>
+                <p class="lead max-w-3xl mx-auto">
+                    The R.A.R.E. Award isn't about performance metrics or project completions. 
+                    It's about character — the extraordinary acts of service, integrity, and empathy 
+                    that go well beyond normal expectations.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <div class="card card-feature hover-lift">
+                    <div class="card-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-feature-title">Exceptional Integrity</h3>
+                    <p class="card-feature-description">
+                        Demonstrating moral courage and personal sacrifice for the greater good, 
+                        even when no one is watching.
+                    </p>
+                </div>
+
+                <div class="card card-feature hover-lift">
+                    <div class="card-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-feature-title">Deep Compassion</h3>
+                    <p class="card-feature-description">
+                        Acting as a stabilizing force within the team through genuine empathy, 
+                        especially during moments of crisis.
+                    </p>
+                </div>
+
+                <div class="card card-feature hover-lift">
+                    <div class="card-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-feature-title">Unwavering Commitment</h3>
+                    <p class="card-feature-description">
+                        Quietly taking initiative to improve the culture, morale, and mission of RAP, 
+                        often under great personal challenge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Recognition Section -->
+    <section class="bg-gradient-primary text-white py-12">
+        <div class="container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="h2 mb-6 text-gradient">Excellence in the Face of Hardship</h2>
+                <blockquote class="text-xl italic mb-6 opacity-90">
+                    "True strength is revealed in hardship. Those who continue to lift others 
+                    even while burdened themselves reflect the deepest spirit of RAP."
+                </blockquote>
+                <p class="text-lg opacity-90">
+                    Special consideration is given when an employee shows excellence under adversity — 
+                    continuing to act with empathy, discipline, and professionalism while navigating 
+                    serious personal challenges outside of work.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Criteria Section -->
+    <section id="criteria" class="py-12 bg-gray-50">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="h2 mb-4">Recognition Criteria</h2>
+                <p class="lead">The R.A.R.E. Award is granted only when truly exceptional character is demonstrated</p>
+            </div>
+
+            <div class="accordion accordion-faq max-w-3xl mx-auto">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            Who is eligible for the R.A.R.E. Award?
+                        </div>
+                        <div class="accordion-indicator accordion-indicator-chevron"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            All employees are eligible, regardless of role or tenure. The award focuses on character 
+                            and exceptional acts of service rather than job performance or seniority.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            How much is the award?
+                        </div>
+                        <div class="accordion-indicator accordion-indicator-chevron"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            Recipients receive the equivalent of one month's base salary, capped at $5,000. 
+                            This is processed through payroll in the next cycle following the announcement.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            How often is the award given?
+                        </div>
+                        <div class="accordion-indicator accordion-indicator-chevron"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            Up to once per quarter, at the sole discretion of the Chief Executive Officer. 
+                            If no individual meets the required standard of exceptionalism in a given quarter, 
+                            the award may not be issued. It is never guaranteed.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            What types of actions qualify?
+                        </div>
+                        <div class="accordion-indicator accordion-indicator-chevron"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            Qualifying actions include voluntarily helping others in moments of crisis, 
+                            demonstrating moral courage or personal sacrifice, acting as a stabilizing force 
+                            through compassion, supporting others while managing personal hardships, or 
+                            quietly taking initiative to improve RAP's culture and mission.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            How are recipients selected?
+                        </div>
+                        <div class="accordion-indicator accordion-indicator-chevron"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            The CEO may receive informal nominations or personal observations. Each potential 
+                            recipient is reviewed confidentially with HR to ensure alignment with company 
+                            standards. Upon approval, the CEO personally notifies the recipient and prepares 
+                            a public recognition statement.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="policy.html" class="btn btn-primary btn-lg">
+                    View Complete Policy
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Winners Section -->
+    <section id="winners" class="py-12">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="h2 mb-4">Those Who Made RAP R.A.R.E.</h2>
+                <p class="lead">Celebrating our exceptional colleagues who embody the best of who we are</p>
+            </div>
+
+            <div class="carousel carousel-testimonial">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Q4 2024 Winner -->
+                        <div class="carousel-slide active">
+                            <div class="card-winner">
+                                <div class="card-winner-badge">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="card-winner-content">
+                                    <div class="card-winner-quarter">Q4 2024 Recipient</div>
+                                    <h3 class="card-winner-name">Sarah Chen</h3>
+                                    <p class="card-winner-achievement">
+                                        While managing her own family medical crisis, Sarah became the cornerstone 
+                                        of support for her entire team during our critical year-end period. Her 
+                                        extraordinary compassion and unwavering dedication inspired us all.
+                                    </p>
+                                    <div class="card-winner-citation">
+                                        "Sarah's strength in adversity and her commitment to lifting others even 
+                                        while carrying her own burdens exemplifies the very essence of what makes 
+                                        someone truly R.A.R.E."
+                                        <div class="mt-3 text-sm">— CEO Recognition Statement</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 2024 Winner -->
+                        <div class="carousel-slide">
+                            <div class="card-winner">
+                                <div class="card-winner-badge">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="card-winner-content">
+                                    <div class="card-winner-quarter">Q3 2024 Recipient</div>
+                                    <h3 class="card-winner-name">Marcus Johnson</h3>
+                                    <p class="card-winner-achievement">
+                                        Marcus quietly identified and resolved a culture challenge that had been 
+                                        affecting team morale for months. His initiative, taken without recognition 
+                                        or request, transformed our workplace environment.
+                                    </p>
+                                    <div class="card-winner-citation">
+                                        "Marcus demonstrated that true leadership isn't about title or position — 
+                                        it's about seeing a need and filling it with grace and humility."
+                                        <div class="mt-3 text-sm">— CEO Recognition Statement</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="carousel-control carousel-prev" aria-label="Previous">
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-control carousel-next" aria-label="Next">
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="carousel-indicators carousel-indicators-dots">
+                        <button class="carousel-indicator active" aria-label="Slide 1"></button>
+                        <button class="carousel-indicator" aria-label="Slide 2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 bg-gradient-primary">
+        <div class="container">
+            <div class="footer-cta">
+                <div class="footer-cta-content">
+                    <h2 class="footer-cta-title">Know Someone Exceptional?</h2>
+                    <p class="footer-cta-description">
+                        Every day, remarkable acts of character happen around us. Sometimes they're visible, 
+                        sometimes they're not. Help us recognize those who make RAP truly special.
+                    </p>
+                    <a href="nominate.html" class="footer-cta-button">
+                        Nominate a Colleague
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 10 L60 40 L90 40 L65 55 L75 85 L50 65 L25 85 L35 55 L10 40 L40 40 Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="footer-logo-text">
+                            <div class="footer-logo-title">R.A.R.E.</div>
+                            <div class="footer-logo-subtitle">Award for Remarkable Excellence</div>
+                        </div>
+                    </a>
+                    <p class="footer-description">
+                        Honoring the highest expression of RAP's culture — when employees demonstrate 
+                        exceptional integrity, compassion, and commitment.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about" class="footer-link">About the Award</a></li>
+                        <li><a href="#criteria" class="footer-link">Criteria</a></li>
+                        <li><a href="#winners" class="footer-link">Past Winners</a></li>
+                        <li><a href="policy.html" class="footer-link">Full Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Actions</h3>
+                    <ul class="footer-links">
+                        <li><a href="nominate.html" class="footer-link">Submit Nomination</a></li>
+                        <li><a href="nominate.html#guidelines" class="footer-link">Nomination Guidelines</a></li>
+                        <li><a href="policy.html#process" class="footer-link">Selection Process</a></li>
+                        <li><a href="policy.html#recognition" class="footer-link">Recognition Details</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-column-title">RAP Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://rap.com" class="footer-link">Company Website</a></li>
+                        <li><a href="https://rap.com/careers" class="footer-link">Careers</a></li>
+                        <li><a href="https://rap.com/values" class="footer-link">Our Values</a></li>
+                        <li><a href="https://rap.com/contact" class="footer-link">Contact HR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>© 2025 RAP Company. Made with</span>
+                    <span class="copyright-heart">♥</span>
+                    <span>for our exceptional team.</span>
+                </div>
+                <ul class="footer-bottom-links">
+                    <li><a href="#" class="footer-bottom-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-bottom-link">Terms of Use</a></li>
+                    <li><a href="#" class="footer-bottom-link">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

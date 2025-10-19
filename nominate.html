@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Nominate Someone for R.A.R.E. Award | RAP</title>
+    <meta name="description" content="Submit a nomination for the R.A.R.E. Award. Recognize exceptional colleagues who demonstrate remarkable integrity, compassion, and commitment.">
+    <meta name="keywords" content="R.A.R.E. Award nomination, employee recognition form, nominate colleague">
+    <meta name="author" content="RAP Company">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nominate for R.A.R.E. Award - RAP">
+    <meta property="og:description" content="Recognize an exceptional colleague who embodies the best of RAP's values">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://rareaward.rap.com/nominate">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <div class="header-logo-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10 L60 40 L90 40 L65 55 L75 85 L50 65 L25 85 L35 55 L10 40 L40 40 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="header-logo-text">
+                    <div class="header-logo-title">R.A.R.E.</div>
+                    <div class="header-logo-subtitle">Award for Remarkable Excellence</div>
+                </div>
+            </a>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#winners" class="nav-link">Winners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="policy.html" class="nav-link">Policy</a>
+                    </li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="btn btn-ghost btn-sm" id="saveDraft">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM2 7a2 2 0 012-2h12a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V7z"/>
+                        </svg>
+                        Save Draft
+                    </button>
+                    <button class="btn btn-secondary btn-sm" onclick="window.print()">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M5 4v3H4a2 2 0 00-2 2v4a2 2 0 002 2h1v3a1 1 0 001 1h8a1 1 0 001-1v-3h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a1 1 0 00-1-1H6a1 1 0 00-1 1z"/>
+                        </svg>
+                        Print Form
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Breadcrumbs -->
+    <div class="container mt-8">
+        <nav class="breadcrumbs">
+            <div class="breadcrumb-item">
+                <a href="index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">/</span>
+            </div>
+            <div class="breadcrumb-item">
+                <span class="breadcrumb-current">Nominate</span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="py-8 bg-gradient-primary text-white">
+        <div class="container">
+            <div class="max-w-3xl">
+                <h1 class="h2 mb-3">Nominate Someone Exceptional</h1>
+                <p class="text-lg opacity-90">
+                    Help us recognize those who demonstrate remarkable integrity, compassion, and commitment. 
+                    Your nomination helps ensure exceptional acts of character don't go unnoticed.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guidelines Section -->
+    <section id="guidelines" class="py-8 bg-gold-subtle">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="h3 mb-4">Before You Begin</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="font-semibold text-navy mb-3">
+                                <svg class="inline w-5 h-5 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                What Makes a Strong Nomination
+                            </h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>• Specific examples of exceptional behavior</li>
+                                <li>• Context about challenges faced</li>
+                                <li>• Impact on team or company culture</li>
+                                <li>• How actions went beyond expectations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="font-semibold text-navy mb-3">
+                                <svg class="inline w-5 h-5 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+                                </svg>
+                                Important Reminders
+                            </h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>• This is a character award, not performance-based</li>
+                                <li>• All employees are eligible regardless of role</li>
+                                <li>• Your nomination will be kept confidential</li>
+                                <li>• The award is at the CEO's discretion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nomination Form -->
+    <section class="py-12">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <!-- Progress Steps -->
+                <div class="form-steps mb-8">
+                    <div class="form-step active" data-step="1">
+                        <div class="form-step-number">1</div>
+                        <div class="form-step-label">Nominee Info</div>
+                    </div>
+                    <div class="form-step" data-step="2">
+                        <div class="form-step-number">2</div>
+                        <div class="form-step-label">Your Story</div>
+                    </div>
+                    <div class="form-step" data-step="3">
+                        <div class="form-step-number">3</div>
+                        <div class="form-step-label">Details</div>
+                    </div>
+                    <div class="form-step" data-step="4">
+                        <div class="form-step-number">4</div>
+                        <div class="form-step-label">Your Info</div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form id="nominationForm" class="card">
+                    <div class="card-body p-8">
+                        <!-- Step 1: Nominee Information -->
+                        <div class="form-step-content active" data-step-content="1">
+                            <h3 class="h4 mb-6">Step 1: Nominee Information</h3>
+                            
+                            <div class="form-row form-row-2 mb-6">
+                                <div class="form-group">
+                                    <label class="form-label form-label-required" for="nomineeFirstName">
+                                        First Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="nomineeFirstName" 
+                                        name="nomineeFirstName" 
+                                        class="form-input"
+                                        required
+                                        placeholder="Jane"
+                                    >
+                                    <span class="form-feedback form-feedback-error hidden">
+                                        <svg class="form-feedback-icon" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+                                        </svg>
+                                        Please enter the nominee's first name
+                                    </span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label form-label-required" for="nomineeLastName">
+                                        Last Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="nomineeLastName" 
+                                        name="nomineeLastName" 
+                                        class="form-input"
+                                        required
+                                        placeholder="Doe"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-row form-row-2 mb-6">
+                                <div class="form-group">
+                                    <label class="form-label form-label-required" for="nomineeDepartment">
+                                        Department
+                                    </label>
+                                    <select id="nomineeDepartment" name="nomineeDepartment" class="form-select" required>
+                                        <option value="">Select Department</option>
+                                        <option value="engineering">Engineering</option>
+                                        <option value="sales">Sales</option>
+                                        <option value="marketing">Marketing</option>
+                                        <option value="hr">Human Resources</option>
+                                        <option value="finance">Finance</option>
+                                        <option value="operations">Operations</option>
+                                        <option value="customer-service">Customer Service</option>
+                                        <option value="it">Information Technology</option>
+                                        <option value="legal">Legal</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label form-label-required" for="nomineeTitle">
+                                        Job Title
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="nomineeTitle" 
+                                        name="nomineeTitle" 
+                                        class="form-input"
+                                        required
+                                        placeholder="Senior Engineer"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-6">
+                                <label class="form-label" for="nomineeEmail">
+                                    Email Address
+                                    <span class="form-label-optional"></span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="nomineeEmail" 
+                                    name="nomineeEmail" 
+                                    class="form-input"
+                                    placeholder="jane.doe@rap.com"
+                                >
+                                <span class="form-help">Optional - Only if you'd like them to be notified if selected</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label form-label-required">
+                                    How long have you known the nominee?
+                                </label>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationshipLength" value="less-6-months" class="form-radio-input" required>
+                                        <span class="form-radio-label">Less than 6 months</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationshipLength" value="6-12-months" class="form-radio-input">
+                                        <span class="form-radio-label">6-12 months</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationshipLength" value="1-3-years" class="form-radio-input">
+                                        <span class="form-radio-label">1-3 years</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationshipLength" value="3-plus-years" class="form-radio-input">
+                                        <span class="form-radio-label">3+ years</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Your Story -->
+                        <div class="form-step-content" data-step-content="2">
+                            <h3 class="h4 mb-6">Step 2: Tell Their Story</h3>
+                            
+                            <div class="bg-gold-subtle p-4 rounded-lg mb-6">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Tip:</strong> Be specific! Include dates, situations, and concrete examples. 
+                                    The more detail you provide, the better we can understand the exceptional nature of their actions.
+                                </p>
+                            </div>
+
+                            <div class="form-group mb-6">
+                                <label class="form-label form-label-required" for="nominationStory">
+                                    Describe the exceptional act(s) or ongoing behavior that makes this person R.A.R.E.
+                                </label>
+                                <textarea 
+                                    id="nominationStory" 
+                                    name="nominationStory" 
+                                    class="form-textarea"
+                                    rows="8"
+                                    required
+                                    placeholder="Please share specific examples of how this person has demonstrated exceptional integrity, compassion, or commitment. What did they do that went above and beyond normal expectations?"
+                                ></textarea>
+                                <div class="flex justify-between mt-2">
+                                    <span class="form-help">Minimum 200 characters</span>
+                                    <span class="text-sm text-gray-500">
+                                        <span id="storyCharCount">0</span> / 2000 characters
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label form-label-required" for="nominationImpact">
+                                    What was the impact of their actions?
+                                </label>
+                                <textarea 
+                                    id="nominationImpact" 
+                                    name="nominationImpact" 
+                                    class="form-textarea"
+                                    rows="6"
+                                    required
+                                    placeholder="How did their actions affect you, the team, or the company? What would have happened without their intervention?"
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Supporting Details -->
+                        <div class="form-step-content" data-step-content="3">
+                            <h3 class="h4 mb-6">Step 3: Supporting Details</h3>
+
+                            <div class="form-group mb-6">
+                                <label class="form-label form-label-required">
+                                    Which R.A.R.E. qualities best describe this nominee? (Select all that apply)
+                                </label>
+                                <div class="space-y-3">
+                                    <label class="form-check">
+                                        <input type="checkbox" name="qualities[]" value="integrity" class="form-check-input">
+                                        <span class="form-check-label">
+                                            <strong>Exceptional Integrity:</strong> Demonstrates moral courage and personal sacrifice
+                                        </span>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="checkbox" name="qualities[]" value="compassion" class="form-check-input">
+                                        <span class="form-check-label">
+                                            <strong>Deep Compassion:</strong> Acts as a stabilizing force through empathy
+                                        </span>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="checkbox" name="qualities[]" value="commitment" class="form-check-input">
+                                        <span class="form-check-label">
+                                            <strong>Unwavering Commitment:</strong> Takes initiative to improve culture and morale
+                                        </span>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="checkbox" name="qualities[]" value="adversity" class="form-check-input">
+                                        <span class="form-check-label">
+                                            <strong>Excellence in Adversity:</strong> Maintains excellence despite personal challenges
+                                        </span>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="checkbox" name="qualities[]" value="leadership" class="form-check-input">
+                                        <span class="form-check-label">
+                                            <strong>Quiet Leadership:</strong> Leads by example without seeking recognition
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-6">
+                                <label class="form-label" for="witnesses">
+                                    Were there other witnesses to these actions?
+                                    <span class="form-label-optional"></span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="witnesses" 
+                                    name="witnesses" 
+                                    class="form-input"
+                                    placeholder="Names of other colleagues who witnessed these actions (optional)"
+                                >
+                            </div>
+
+                            <div class="form-group mb-6">
+                                <label class="form-label" for="additionalContext">
+                                    Additional context or information
+                                    <span class="form-label-optional"></span>
+                                </label>
+                                <textarea 
+                                    id="additionalContext" 
+                                    name="additionalContext" 
+                                    class="form-textarea"
+                                    rows="4"
+                                    placeholder="Any other information that would help us understand why this person deserves recognition"
+                                ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-check">
+                                    <input type="checkbox" name="confidential" value="yes" class="form-check-input">
+                                    <span class="form-check-label">
+                                        This nomination contains sensitive information that should be handled with extra care
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Your Information -->
+                        <div class="form-step-content" data-step-content="4">
+                            <h3 class="h4 mb-6">Step 4: Your Information</h3>
+                            
+                            <div class="bg-gray-100 p-4 rounded-lg mb-6">
+                                <p class="text-sm text-gray-700">
+                                    Your information will be kept confidential and only used if we need to follow up on your nomination.
+                                </p>
+                            </div>
+
+                            <div class="form-row form-row-2 mb-6">
+                                <div class="form-group">
+                                    <label class="form-label form-label-required" for="yourFirstName">
+                                        Your First Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="yourFirstName" 
+                                        name="yourFirstName" 
+                                        class="form-input"
+                                        required
+                                    >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label form-label-required" for="yourLastName">
+                                        Your Last Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="yourLastName" 
+                                        name="yourLastName" 
+                                        class="form-input"
+                                        required
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-row form-row-2 mb-6">
+                                <div class="form-group">
+                                    <label class="form-label form-label-required" for="yourEmail">
+                                        Your Email
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="yourEmail" 
+                                        name="yourEmail" 
+                                        class="form-input"
+                                        required
+                                        placeholder="your.name@rap.com"
+                                    >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="yourPhone">
+                                        Your Phone
+                                        <span class="form-label-optional"></span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="yourPhone" 
+                                        name="yourPhone" 
+                                        class="form-input"
+                                        placeholder="(555) 123-4567"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-6">
+                                <label class="form-label form-label-required" for="yourDepartment">
+                                    Your Department
+                                </label>
+                                <select id="yourDepartment" name="yourDepartment" class="form-select" required>
+                                    <option value="">Select Department</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="sales">Sales</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="hr">Human Resources</option>
+                                    <option value="finance">Finance</option>
+                                    <option value="operations">Operations</option>
+                                    <option value="customer-service">Customer Service</option>
+                                    <option value="it">Information Technology</option>
+                                    <option value="legal">Legal</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-6">
+                                <label class="form-label form-label-required">
+                                    Your relationship to the nominee
+                                </label>
+                                <div class="space-y-2">
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationship" value="direct-report" class="form-radio-input" required>
+                                        <span class="form-radio-label">Direct Report</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationship" value="manager" class="form-radio-input">
+                                        <span class="form-radio-label">Manager/Supervisor</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationship" value="peer" class="form-radio-input">
+                                        <span class="form-radio-label">Peer/Colleague</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationship" value="cross-team" class="form-radio-input">
+                                        <span class="form-radio-label">Cross-team Colleague</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="relationship" value="other" class="form-radio-input">
+                                        <span class="form-radio-label">Other</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="border-t pt-6">
+                                <label class="form-check">
+                                    <input type="checkbox" name="agreement" value="yes" class="form-check-input" required>
+                                    <span class="form-check-label">
+                                        I confirm that the information provided is accurate to the best of my knowledge and that this nomination 
+                                        is made in good faith to recognize exceptional character and contribution.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="form-nav">
+                            <button type="button" class="form-nav-btn form-nav-btn-prev" id="prevBtn" style="display: none;">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"/>
+                                </svg>
+                                Previous
+                            </button>
+                            
+                            <button type="button" class="form-nav-btn form-nav-btn-next" id="nextBtn">
+                                Next
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                                </svg>
+                            </button>
+                            
+                            <button type="submit" class="form-nav-btn form-nav-btn-submit" id="submitBtn" style="display: none;">
+                                Submit Nomination
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Auto-save indicator -->
+                <div class="text-center mt-4">
+                    <span class="text-sm text-gray-500" id="autoSaveIndicator">
+                        <svg class="inline w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-5L9 2H4z"/>
+                        </svg>
+                        Form auto-saves as you type
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="h3 mb-4">Need Help?</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    If you have questions about the nomination process or need assistance with your submission, 
+                    we're here to help.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <svg class="w-12 h-12 text-gold mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <h3 class="font-semibold mb-2">Email HR</h3>
+                            <p class="text-sm text-gray-600 mb-3">Send questions to our HR team</p>
+                            <a href="mailto:rare.award@rap.com" class="btn btn-sm btn-outline-primary">
+                                rare.award@rap.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <svg class="w-12 h-12 text-gold mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <h3 class="font-semibold mb-2">Call HR</h3>
+                            <p class="text-sm text-gray-600 mb-3">Speak with someone directly</p>
+                            <a href="tel:555-123-4567" class="btn btn-sm btn-outline-primary">
+                                (555) 123-4567
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <svg class="w-12 h-12 text-gold mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/>
+                            </svg>
+                            <h3 class="font-semibold mb-2">View FAQ</h3>
+                            <p class="text-sm text-gray-600 mb-3">Common questions answered</p>
+                            <a href="policy.html#criteria" class="btn btn-sm btn-outline-primary">
+                                Read FAQ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>© 2025 RAP Company. R.A.R.E. Award Nomination Form.</span>
+                </div>
+                <ul class="footer-bottom-links">
+                    <li><a href="index.html" class="footer-bottom-link">Home</a></li>
+                    <li><a href="policy.html" class="footer-bottom-link">Policy</a></li>
+                    <li><a href="#" class="footer-bottom-link">Contact HR</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body modal-body-centered p-8">
+                    <div class="modal-alert-icon modal-alert-icon-success mb-4">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="modal-alert-title">Thank You!</h3>
+                    <p class="modal-alert-message">
+                        Your nomination has been submitted successfully. Thank you for recognizing exceptional excellence at RAP.
+                    </p>
+                    <button class="btn btn-primary btn-block mt-6" onclick="window.location.href='index.html'">
+                        Return to Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script>
+        // Character counter for story field
+        const storyField = document.getElementById('nominationStory');
+        const charCount = document.getElementById('storyCharCount');
+        
+        storyField.addEventListener('input', function() {
+            charCount.textContent = this.value.length;
+        });
+
+        // Multi-step form navigation
+        let currentStep = 1;
+        const totalSteps = 4;
+
+        function showStep(step) {
+            // Update step content
+            document.querySelectorAll('.form-step-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelector(`[data-step-content="${step}"]`).classList.add('active');
+
+            // Update step indicators
+            document.querySelectorAll('.form-step').forEach((stepEl, index) => {
+                if (index + 1 < step) {
+                    stepEl.classList.add('completed');
+                    stepEl.classList.remove('active');
+                } else if (index + 1 === step) {
+                    stepEl.classList.add('active');
+                    stepEl.classList.remove('completed');
+                } else {
+                    stepEl.classList.remove('active', 'completed');
+                }
+            });
+
+            // Update navigation buttons
+            document.getElementById('prevBtn').style.display = step === 1 ? 'none' : 'inline-flex';
+            document.getElementById('nextBtn').style.display = step === totalSteps ? 'none' : 'inline-flex';
+            document.getElementById('submitBtn').style.display = step === totalSteps ? 'inline-flex' : 'none';
+
+            // Scroll to top of form
+            document.getElementById('nominationForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Next button
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            // Basic validation for current step
+            const currentStepContent = document.querySelector(`[data-step-content="${currentStep}"]`);
+            const requiredFields = currentStepContent.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value) {
+                    field.classList.add('form-input-error');
+                    isValid = false;
+                } else {
+                    field.classList.remove('form-input-error');
+                }
+            });
+
+            if (isValid && currentStep < totalSteps) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        });
+
+        // Previous button
+        document.getElementById('prevBtn').addEventListener('click', function() {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        });
+
+        // Form submission
+        document.getElementById('nominationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would normally submit to your backend
+            // For now, we'll just show the success modal
+            document.getElementById('successModal').classList.add('active');
+            
+            // Clear saved form data
+            localStorage.removeItem('nominationFormData');
+        });
+
+        // Auto-save form data
+        const formInputs = document.querySelectorAll('input, textarea, select');
+        formInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                saveFormData();
+                
+                // Update indicator
+                const indicator = document.getElementById('autoSaveIndicator');
+                indicator.innerHTML = '<svg class="inline w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg> Saved';
+                
+                setTimeout(() => {
+                    indicator.innerHTML = '<svg class="inline w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-5L9 2H4z"/></svg> Form auto-saves as you type';
+                }, 2000);
+            });
+        });
+
+        function saveFormData() {
+            const formData = new FormData(document.getElementById('nominationForm'));
+            const data = Object.fromEntries(formData);
+            localStorage.setItem('nominationFormData', JSON.stringify(data));
+        }
+
+        // Load saved form data on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const savedData = localStorage.getItem('nominationFormData');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                Object.keys(data).forEach(key => {
+                    const field = document.querySelector(`[name="${key}"]`);
+                    if (field) {
+                        field.value = data[key];
+                    }
+                });
+                
+                // Update character count if story field has content
+                if (data.nominationStory) {
+                    document.getElementById('storyCharCount').textContent = data.nominationStory.length;
+                }
+            }
+        });
+
+        // Save draft button
+        document.getElementById('saveDraft').addEventListener('click', function() {
+            saveFormData();
+            alert('Your nomination draft has been saved. You can return to complete it later.');
+        });
+    </script>
+</body>
+</html>

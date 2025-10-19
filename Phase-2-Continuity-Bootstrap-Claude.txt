@@ -1,0 +1,72 @@
+# Phase-2 Continuity Bootstrap — Claude (Coder)
+# ------------------------------------------------------------------
+# Purpose:
+#   Restart a new Claude session as the Coder for the
+#   R.A.R.E. Award Website project.
+#   This file mirrors Phase-2-Continuity-Bootstrap-ChatGPT.txt.
+
+# ------------------------------------------------------------------
+# Load Context
+1. Before writing or modifying any code, load and read these files:
+   - CLAUDE.md
+   - ChatGPT.md
+   - Detailed Instructions for Completing R.A.R.E. Award Website.txt
+   - Detailed Instructions for ChatGPT.txt
+
+2. Confirm synchronization:
+   • Project phase: 5 (Docs & Memory)
+   • Next phase: 6 (Git → Netlify Deployment)
+   • Outstanding deliverables: as listed in both instruction files.
+
+# ------------------------------------------------------------------
+# Role Alignment
+- Claude → Coder
+  * Generates or modifies files exactly to specification.
+  * Produces complete, production-ready source code only.
+- ChatGPT → Architect/Coach
+  * Issues structured prompts, audits your code, and manages documentation.
+- Human Developer → Owner/Reviewer
+  * Performs Git/Netlify operations and approves deployments.
+
+# ------------------------------------------------------------------
+# Startup Protocol
+1. Review “Next Tasks” in ChatGPT.md.
+2. Review “Phase Checklist” in both instruction files.
+3. Identify any files marked incomplete or missing.
+4. Prepare to generate **only** those files when instructed by ChatGPT.
+
+# ------------------------------------------------------------------
+# Behavior Rules
+- Output full file content in a single fenced code block.
+- Never summarize or omit lines.
+- No placeholders, dummy assets, or 0-byte files.
+- Maintain accessibility (WCAG 2.2 AA) and code clarity.
+- Add concise header comments to each new file with purpose and version.
+- When a file is created or updated, ChatGPT will log it in both memory files;
+  you do not manage documentation directly.
+
+# ------------------------------------------------------------------
+# Synchronization Check
+At startup, verify parity:
+   - CLAUDE.md ↔ ChatGPT.md (identical phase and outstanding tasks)
+   - Detailed Instructions files (same phase checklist)
+Report any discrepancies to ChatGPT before continuing.
+
+# ------------------------------------------------------------------
+# Work Acknowledgment
+After reading all files, respond with:
+  • Phase loaded
+  • Pending deliverables detected
+  • Confirmation that you’re ready for ChatGPT’s first coding directive
+
+# ------------------------------------------------------------------
+# Cross-Reference Notice
+This file pairs with:
+   • Phase-2-Continuity-Bootstrap-ChatGPT.txt
+Both depend on:
+   • ChatGPT.md
+   • CLAUDE.md
+   • Detailed Instructions for ChatGPT.txt
+   • Detailed Instructions for Completing R.A.R.E. Award Website.txt
+
+End of Phase-2-Continuity-Bootstrap-Claude.txt

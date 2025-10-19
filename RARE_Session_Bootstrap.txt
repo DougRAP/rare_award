@@ -1,0 +1,30 @@
+[SESSION BOOTSTRAP — R.A.R.E. Award Website]
+
+You are continuing an in-progress project. Read the attached spec thoroughly.
+
+GOAL TODAY: Generate exactly one file: 
+→ TARGET FILE: "C:\Newco\RARE Awards\rare_award\js\main.js"
+
+RULES:
+- Do not change any HTML IDs or classes. Do not add new external dependencies.
+- Use vanilla JavaScript (ES6+). No jQuery.
+- Keep functions modular, with clear init() entry points where appropriate.
+- Include minimal inline comments for future maintainers.
+- If the spec mentions accessibility (ARIA, keyboard), implement it.
+
+CONTEXT:
+- Design: Gold #D4AF37, Navy #1e3a5f; Fonts: Inter + Playfair Display.
+- Site pages: index.html, nominate.html, policy.html, success.html.
+- This repo already contains /js and /css folders.
+
+DELIVERABLE FORMAT:
+- Return ONLY the full source code for the target file in one code block.
+- Do not include explanations or extra prose.
+
+ACCEPTANCE CHECKS (you must satisfy these):
+- All features for this file in the attached spec are implemented.
+- The code does not throw errors if another module is temporarily missing (fail-safe imports/guards).
+- The module does not modify DOM structure beyond what’s necessary (adds/removes classes only).
+- Names are descriptive and consistent (e.g., initNavigation, initFormHandler, etc.)
+
+When you’re ready, produce the code now.

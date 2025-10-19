@@ -1,0 +1,456 @@
+## **Detailed Instructions for Completing R.A.R.E. Award Website**
+
+### **Project Context for New Session**
+You are completing a R.A.R.E. Award website for RAP company.  
+The site recognizes exceptional employees quarterly with up to $5,000.  
+The design uses gold (#D4AF37) and navy (#1e3a5f) colors, with Inter and Playfair Display fonts.  
+All HTML and most CSS files are complete. You need to create the JavaScript functionality and remaining CSS.
+
+---
+
+## **FILE 1: `js/main.js` - Essential Initialization**
+
+### **Purpose:**
+Main JavaScript file that initializes all site functionality on DOMContentLoaded.
+
+### **Required Features:**
+1. **Smooth Scrolling**
+   - Intercept all anchor links starting with "#"
+   - Implement smooth scroll with offset for fixed header (80px)
+   - Update URL without jump
+
+2. **Scroll Progress Bar**
+   - Update header progress bar (`#scrollProgress`) width based on scroll position
+   - Calculate: `(scrollY / (document.height - window.height)) * 100`
+
+3. **Back to Top Button**
+   - Show/hide `#backToTop` button after 300px scroll
+   - Smooth scroll to top on click
+   - Add fade in/out animation
+
+4. **Announcement Bar**
+   - Close button functionality for `.announcement-close`
+   - Save closed state in sessionStorage
+   - Don’t show if already closed in session
+
+5. **Header Transparency**
+   - Add/remove `header-scrolled` class on scroll
+   - Transition from transparent to solid on homepage
+   - Check for `.header-transparent` class
+
+6. **Lazy Loading**
+   - Initialize IntersectionObserver for images with `data-src`
+   - Fade in animation on load
+   - Add loading="lazy" attribute support check
+
+7. **Initialize Components**
+   - Call all other module init functions
+   - Error handling for missing modules
+
+### **Code Structure:**
+```javascript
+// Wrap everything in DOMContentLoaded
+// Initialize all features in order
+// Add event listeners
+// Call module initializations
+```
+
+---
+
+## **FILE 2: `js/navigation.js` - Navigation Functionality**
+
+### **Purpose:**
+Handle all navigation interactions including mobile menu, active states, and scroll behavior.
+
+### **Required Features:**
+
+1. **Mobile Menu Toggle**
+   - Toggle button: `#mobileToggle`
+   - Menu: `#mainNav`
+   - Overlay: `#mobileOverlay`
+   - Add/remove `active` class
+   - Prevent body scroll when open
+   - Close on overlay click
+   - Close on ESC key
+   - Hamburger animation (transform to X)
+
+2. **Active Navigation States**
+   - Highlight current page in navigation
+   - Update active section on scroll (for single-page sections)
+   - Use IntersectionObserver for performance
+   - Add `active` class to current nav item
+
+3. **Dropdown Navigation** (if needed)
+   - Handle hover and focus states
+   - Keyboard navigation support
+   - Touch device support
+
+4. **Search Functionality**
+   - Quick search with keyboard shortcut (Ctrl+K)
+   - Search modal or dropdown
+   - Filter navigation items
+
+5. **Sticky Header**
+   - Add `header-sticky` class on scroll down
+   - Hide on scroll down, show on scroll up
+   - Smooth transition
+
+6. **Breadcrumb Updates**
+   - Update breadcrumb based on page section
+   - Dynamic breadcrumb generation
+
+### **Accessibility Requirements:**
+- ARIA labels and states
+- Keyboard navigation (Tab, Enter, Escape)
+- Focus management
+- Screen reader announcements
+
+---
+
+## **FILE 3: `js/form-handler.js` - Form Submission Logic**
+
+### **Purpose:**
+Handle all form submissions, particularly the multi-step nomination form.
+
+### **Required Features:**
+
+1. **Multi-Step Form Navigation**
+   - Track current step (1–4)
+   - Validate current step before proceeding
+   - Update progress indicators
+   - Show/hide step content
+   - Enable/disable navigation buttons
+
+2. **Form Submission**
+   - Prevent default submission
+   - Collect all form data using FormData API
+   - Validate all required fields
+   - Format data for submission
+   - Handle file uploads if needed
+
+3. **AJAX Submission**
+   ```javascript
+   // Mock API endpoint for demo
+   const API_ENDPOINT = '/api/nominations/submit';
+   // Use fetch() with proper headers
+   // Handle success/error responses
+   // Show loading state during submission
+   ```
+
+4. **Success Handling**
+   - Show success modal/redirect to success.html
+   - Clear form data from localStorage
+   - Generate reference number
+   - Trigger confetti animation
+
+5. **Error Handling**
+   - Display specific error messages
+   - Highlight problem fields
+   - Maintain form data on error
+   - Retry mechanism
+
+6. **Auto-Save Functionality**
+   - Save form data to localStorage on input
+   - Debounce saves (500ms)
+   - Show save indicator
+   - Load saved data on page load
+
+7. **Draft Management**
+   - Save draft button functionality
+   - Timestamp drafts
+   - Multiple draft support
+   - Draft restoration
+
+### **Integration Points:**
+- Calls validation from form-validation.js
+- Uses localStorage utilities
+- Triggers success animations
+
+---
+
+## **FILE 4: `js/form-validation.js` - Input Validation**
+
+### **Purpose:**
+Comprehensive form validation with real-time feedback.
+
+### **Required Features:**
+
+1. **Field Validators**
+   ```javascript
+   const validators = {
+     required: (value) => value.trim() !== '',
+     email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+     phone: (value) => /^\+?[\d\s-()]+$/.test(value),
+     minLength: (value, length) => value.length >= length,
+     maxLength: (value, length) => value.length <= length,
+     pattern: (value, pattern) => new RegExp(pattern).test(value)
+   };
+   ```
+
+2. **Real-time Validation**
+   - Validate on blur
+   - Validate on input (with debounce)
+   - Show inline error messages
+   - Add visual indicators (red border, icon)
+
+3. **Custom Validators for R.A.R.E. Form**
+   - Story minimum 200 characters
+   - At least one quality checkbox selected
+   - Valid department selection
+   - Relationship field required
+
+4. **Error Message Display**
+   - Field-specific error messages
+   - Error summary at form top
+   - Smooth scroll to first error
+   - Clear errors on correction
+
+5. **Form State Management**
+   - Track field validity
+   - Track form completion percentage
+   - Enable/disable submit based on validity
+   - Show completion progress
+
+6. **Accessibility**
+   - ARIA invalid attributes
+   - Screen reader announcements
+   - Focus management on errors
+
+---
+
+## **FILE 5: `js/accordion.js` - FAQ/Accordion Functionality**
+
+### **Purpose:**
+Handle accordion interactions for FAQ section and policy page.
+
+### **Required Features:**
+
+1. **Basic Accordion**
+   - Click to toggle
+   - Smooth height animation
+   - Icon rotation
+   - Only one open at a time (optional)
+
+2. **Initialization**
+   ```javascript
+   // Find all .accordion elements
+   // Add click listeners to .accordion-header
+   // Handle state changes
+   ```
+
+3. **State Management**
+   - Add/remove `active` class
+   - Animate max-height for smooth transition
+   - Update ARIA attributes
+
+4. **Advanced Features**
+   - Keyboard navigation (arrow keys)
+   - Open/close all button
+   - Deep linking (#faq-item-1)
+   - Remember state in sessionStorage
+
+5. **Animation Control**
+   - Smooth expand/collapse
+   - Prevent animation on page load
+   - Handle dynamic content height
+
+---
+
+## **FILE 6: `js/carousel.js` - Winner Showcase Carousel**
+
+### **Purpose:**
+Create smooth carousel for displaying award winners.
+
+### **Required Features:**
+
+1. **Core Carousel**
+   - Previous/Next navigation
+   - Indicator dots
+   - Touch/swipe support
+   - Keyboard navigation
+   - Auto-play option
+
+2. **Initialization**
+   ```javascript
+   class Carousel {
+     constructor(element, options = {}) {
+       this.autoPlay = options.autoPlay || false;
+       this.duration = options.duration || 5000;
+       this.loop = options.loop || true;
+     }
+   }
+   ```
+
+3. **Touch Support**
+   - Track touch start/move/end
+   - Calculate swipe direction
+   - Velocity-based swipe
+   - Prevent accidental swipes
+
+4. **Responsive Behavior**
+   - Adjust for mobile/tablet/desktop
+   - Show different number of slides
+   - Stack on mobile
+
+5. **Accessibility**
+   - ARIA labels
+   - Keyboard controls
+   - Pause on hover/focus
+   - Screen reader announcements
+
+---
+
+## **FILE 7: `css/print.css` - Print Optimization**
+
+### **Purpose:**
+Optimize all pages for printing, especially the policy document.
+
+### **Required CSS:**
+```css
+@media print {
+  /* 1. Hide non-essential elements */
+  .header-nav, .mobile-toggle, .footer, 
+  .back-to-top, .announcement-bar,
+  .hero-scroll, .breadcrumbs,
+  button:not(.print-show) { display: none; }
+
+  /* 2. Reset backgrounds */
+  body { background: white; color: black; }
+  .card { box-shadow: none; border: 1px solid #ddd; }
+  
+  /* 3. Optimize layout */
+  .container { max-width: 100%; padding: 0; }
+  
+  /* 4. Page breaks */
+  h2, h3 { page-break-after: avoid; }
+  .card { page-break-inside: avoid; }
+  
+  /* 5. Show URLs for links */
+  a[href^="http"]:after { 
+    content: " (" attr(href) ")"; 
+    font-size: 0.8em;
+  }
+  
+  /* 6. Policy page specific */
+  aside { display: none; } /* Hide TOC sidebar */
+  .policy-content { margin: 0; max-width: 100%; }
+  
+  /* 7. Form specific */
+  input, textarea { border: 1px solid #999; }
+  
+  /* 8. Page margins */
+  @page { margin: 1in; size: letter; }
+}
+```
+
+---
+
+## **FILE 8: `js/animations.js` - Animation Controllers**
+
+### **Purpose:**
+Control complex animations and scroll-triggered effects.
+
+### **Required Features:**
+
+1. **Scroll Animations**
+   - Fade in on scroll
+   - Slide in from sides
+   - Scale up
+   - Parallax effects
+
+2. **Particle System (for hero)**
+   ```javascript
+   // Create floating particles
+   // Random movement
+   // Performance optimized with requestAnimationFrame
+   ```
+
+3. **Counter Animations**
+   - Animate numbers counting up
+   - Start on scroll into view
+   - Easing functions
+
+4. **Confetti Effect (success page)**
+   - Random colors and sizes
+   - Physics-based falling
+   - Performance optimized
+
+---
+
+## **FILE 9: `js/dark-mode.js` - Dark Mode Toggle**
+
+### **Required Features:**
+
+1. **Toggle Functionality**
+   - Button: `#themeToggle`
+   - Add `data-theme="dark"` to body
+   - Save preference to localStorage
+   - Respect system preference initially
+
+2. **Smooth Transition**
+   - CSS transitions for color changes
+   - Prevent flash on load
+
+---
+
+## **FILE 10: `js/local-storage.js` - Storage Utilities**
+
+### **Purpose:**
+Centralized localStorage management with fallbacks.
+
+### **Required Functions:**
+```javascript
+const Storage = {
+  set(key, value, isSession = false) {},
+  get(key, isSession = false) {},
+  remove(key, isSession = false) {},
+  clear(isSession = false) {},
+  has(key, isSession = false) {}
+};
+```
+
+---
+
+## **FILE 11: `README.md` - Documentation**
+
+### **Required Sections:**
+1. Project Overview
+2. Installation Instructions
+3. File Structure
+4. Dependencies
+5. Browser Support
+6. Development Guidelines
+7. Deployment Instructions
+8. API Integration Notes
+9. Customization Guide
+10. License
+
+---
+
+## **Integration Testing Checklist**
+After creating all files, test:
+- [ ] Mobile menu toggle
+- [ ] Form validation and submission
+- [ ] Accordion interactions
+- [ ] Carousel navigation
+- [ ] Print layouts
+- [ ] Dark mode toggle
+- [ ] Auto-save functionality
+- [ ] Smooth scrolling
+- [ ] Cross-browser compatibility
+- [ ] Accessibility features
+
+---
+
+## **Binary Assets Still Needed**
+Remember to add:
+- Hero background image (hero-bg.jpg) - 1920×1080px minimum
+- Company logo (logo.png) - transparent PNG
+- Favicon (favicon.ico) - 32×32px
+- Open Graph image (og-image.jpg) - 1200×630px
+- Apple touch icon - 180×180px
+- Original policy PDF
+
+**Note for new session:**  
+All files should use vanilla JavaScript (no jQuery), follow ES6+ standards, include error handling, and maintain consistency with the established design system.  
+The site should work without JavaScript enabled (progressive enhancement).

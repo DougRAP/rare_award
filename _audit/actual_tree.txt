@@ -1,0 +1,118 @@
+Folder PATH listing for volume Windows
+Volume serial number is B0BB-DEF3
+C:\NEWCO\RARE AWARDS\RARE_AWARD
+¦   .env
+¦   .gitignore
+¦   404.html
+¦   CLAUDE.md
+¦   index.html
+¦   netlify.toml
+¦   nominate.html
+¦   package.json
+¦   policy.html
+¦   README.md
+¦   robots.txt
+¦   sitemap.xml
+¦   success.html
+¦   _redirects
+¦   
++---assets
+¦   +---documents
+¦   ¦       certificate-template.pdf
+¦   ¦       nomination-template.pdf
+¦   ¦       rare-policy-original.pdf
+¦   ¦       
+¦   +---fonts
+¦   ¦       dancing-script.woff2
+¦   ¦       inter-bold.woff2
+¦   ¦       inter-medium.woff2
+¦   ¦       inter-regular.woff2
+¦   ¦       playfair-display-bold.woff2
+¦   ¦       playfair-display-regular.woff2
+¦   ¦       
+¦   +---icons
+¦   ¦       arrow-right.svg
+¦   ¦       check-circle.svg
+¦   ¦       close.svg
+¦   ¦       download.svg
+¦   ¦       heart.svg
+¦   ¦       menu.svg
+¦   ¦       print.svg
+¦   ¦       shield.svg
+¦   ¦       star.svg
+¦   ¦       trophy.svg
+¦   ¦       
+¦   +---images
+¦           apple-touch-icon.png
+¦           award-seal.png
+¦           favicon-16x16.png
+¦           favicon-32x32.png
+¦           favicon.ico
+¦           hero-bg.jpg
+¦           logo-dark.svg
+¦           logo.svg
+¦           og-image.jpg
+¦           pattern-rare.svg
+¦           placeholder-winner.jpg
+¦           
++---css
+¦   ¦   animations.css
+¦   ¦   main.css
+¦   ¦   print.css
+¦   ¦   reset.css
+¦   ¦   typography.css
+¦   ¦   utilities.css
+¦   ¦   variables.css
+¦   ¦   
+¦   +---components
+¦           accordion.css
+¦           badge.css
+¦           buttons.css
+¦           cards.css
+¦           carousel.css
+¦           footer.css
+¦           forms.css
+¦           header.css
+¦           hero.css
+¦           modals.css
+¦           
++---data
+¦       form-config.json
+¦       testimonials.json
+¦       winners.json
+¦       
++---dist
+¦   +---css
+¦   +---images
+¦   +---js
++---functions
+¦       generate-pdf.js
+¦       send-confirmation.js
+¦       submit-nomination.js
+¦       
++---js
+¦       accessibility.js
+¦       accordion.js
+¦       animations.js
+¦       carousel.js
+¦       dark-mode.js
+¦       form-handler.js
+¦       form-validation.js
+¦       local-storage.js
+¦       main.js
+¦       navigation.js
+¦       print-generator.js
+¦       
++---partials
+¦       analytics.html
+¦       footer.html
+¦       header.html
+¦       meta-tags.html
+¦       
++---src
+¦   +---js-modules
+¦   +---scss
+¦   +---templates
++---_audit
+        actual_tree.txt
+        

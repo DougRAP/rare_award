@@ -1,0 +1,7 @@
+<!-- Lightweight perf beacon; no external tracking -->
+<script>
+  (function(){ try {
+    performance.mark('rare:start');
+    window.addEventListener('load', function(){ performance.mark('rare:loaded'); performance.measure('rare:ttlb','rare:start','rare:loaded'); });
+  } catch(e){} })();
+</script>

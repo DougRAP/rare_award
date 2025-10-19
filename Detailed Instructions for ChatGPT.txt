@@ -1,0 +1,97 @@
+# Detailed Instructions for ChatGPT (Architect/Coach)
+
+This file is the operational counterpart to:
+  • CLAUDE.md
+  • Detailed Instructions for Completing R.A.R.E. Award Website.txt
+Together, they ensure ChatGPT (architect) and Claude (coder) follow parallel, synchronized workflows.
+
+---
+
+## 1. Objective
+Guide ChatGPT’s responsibilities in managing the R.A.R.E. Award website project
+from architecture to final deployment.
+
+---
+
+## 2. Review Protocol
+- Before each planning or audit session:
+  - Read both `CLAUDE.md` and `ChatGPT.md`.
+  - Cross-check current phase numbers and pending tasks.
+  - Maintain total context usage below 80 %; compress earlier phases if needed.
+- Verify parity between this file and Claude’s instruction file at least once per major phase.
+
+---
+
+## 3. Planning & Coordination Duties
+- Break work into clear, sequential phases.
+- Translate each phase into explicit Claude prompts.
+- Review all code returned by Claude against acceptance criteria in his spec.
+- Update both assistants’ memory files upon approval.
+
+---
+
+## 4. Code & QA Standards
+- Accessibility: WCAG 2.2 AA or higher.
+- Maintainability: CONFIG/state pattern, no inline magic numbers.
+- Dependencies: None external without explicit documentation.
+- Browser coverage: Chrome, Edge, Firefox.
+- Console output: zero errors, only intentional logs.
+- File integrity: no 0 byte or placeholder files in repo.
+
+---
+
+## 5. Documentation & Handoff Responsibilities
+ChatGPT maintains and updates:
+- `CLAUDE.md` (for Claude’s awareness)
+- `ChatGPT.md` (this assistant’s memory)
+- Both “Detailed Instructions” files
+- `Developer Handoff Summary.md` before release
+
+Each change in one file must be mirrored in its counterpart.
+
+---
+
+## 6. Deployment Workflow
+1. `git init` and first commit (clean repo)
+2. Add GitHub remote, push
+3. Connect Netlify; confirm build success
+4. Run PowerShell audit → verify no empty or broken links
+5. Tag release `v1.0-R.A.R.E-Release`
+
+---
+
+## 7. Phase Checklist
+| Phase | Description | Status |
+|--------|--------------|--------|
+| 0 | Baseline audit | ✅ |
+| 1 | Critical styles & partials | ✅ |
+| 2 | JSON datasets | ✅ |
+| 3 | Netlify functions | ✅ |
+| 4 | Assets via code | ✅ |
+| 5 | Docs & Memory | 🟡 Current |
+| 6 | Git → Netlify deployment | ⏳ Pending |
+
+---
+
+## 8. Versioning
+Increment suffix `v1.0.x` with each major doc or functional update.
+Update both assistants’ memory and instruction files simultaneously.
+
+---
+
+## 9. Communication Rules
+- ChatGPT explains strategy, provides full plans, and audits results.
+- Claude outputs **code only** according to his spec.
+- Human developer approves all merges, commits, and deployment actions.
+
+---
+
+## 10. Future Maintenance
+When new features or refactors begin:
+1. Duplicate this instruction set under a new version (e.g., `v1.1-ChatGPT.txt`).
+2. Notify Claude by adding the new filename in his memory (`CLAUDE.md`).
+3. Ensure both assistants refresh their memory with the new version.
+
+---
+
+End of Detailed Instructions for ChatGPT.txt

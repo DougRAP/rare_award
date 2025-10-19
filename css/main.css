@@ -1,0 +1,332 @@
+/* Main CSS File - Import all other stylesheets */
+
+/* ===== IMPORT ORDER MATTERS ===== */
+/* 1. Variables (Design Tokens) */
+@import url('variables.css');
+
+/* 2. Reset/Normalize */
+@import url('reset.css');
+
+/* 3. Typography */
+@import url('typography.css');
+
+/* 4. Utilities */
+@import url('utilities.css');
+
+/* 5. Animations */
+@import url('animations.css');
+
+/* 6. Components */
+@import url('components/header.css');
+@import url('components/footer.css');
+@import url('components/hero.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+@import url('components/buttons.css');
+@import url('components/modals.css');
+@import url('components/accordion.css');
+@import url('components/carousel.css');
+@import url('components/badge.css');
+
+/* ===== GLOBAL BASE STYLES ===== */
+
+/* Smooth scroll for the entire page */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* Account for fixed header */
+}
+
+/* Body base styles */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-gray-900);
+  background-color: var(--color-white);
+  line-height: var(--lh-normal);
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Main content wrapper */
+main {
+  min-height: calc(100vh - 5rem); /* Minus header height */
+  position: relative;
+}
+
+/* Section spacing */
+section {
+  padding: var(--space-16) 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: var(--space-8) 0;
+  }
+}
+
+/* ===== LAYOUT PATTERNS ===== */
+
+/* Full-width container with max-width constraint */
+.wrapper {
+  width: 100%;
+  max-width: var(--max-w-7xl);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Grid system */
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-4);
+}
+
+/* Flex patterns */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== PAGE BACKGROUNDS ===== */
+
+/* Hero gradient background */
+.bg-hero-pattern {
+  background: var(--gradient-hero);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-hero-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../assets/images/pattern-rare.svg') center/cover;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* Subtle pattern background */
+.bg-pattern-subtle {
+  position: relative;
+  background: var(--color-gray-100);
+}
+
+.bg-pattern-subtle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 35px,
+      rgba(212, 175, 55, 0.03) 35px,
+      rgba(212, 175, 55, 0.03) 70px
+    );
+  pointer-events: none;
+}
+
+/* ===== GLASSMORPHISM EFFECT ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glass-dark {
+  background: rgba(26, 35, 50, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* ===== OVERLAY PATTERNS ===== */
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.overlay-gold::before {
+  background: linear-gradient(135deg, 
+    rgba(212, 175, 55, 0.8) 0%, 
+    rgba(212, 175, 55, 0.4) 100%);
+}
+
+.overlay-gradient::before {
+  background: linear-gradient(180deg, 
+    rgba(26, 35, 50, 0.9) 0%, 
+    rgba(26, 35, 50, 0.4) 50%,
+    rgba(26, 35, 50, 0.9) 100%);
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+
+/* Gold accent line */
+.accent-line {
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-gold);
+  border-radius: var(--border-radius-full);
+  margin: var(--space-4) 0;
+}
+
+/* Divider with icon */
+.divider-icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: var(--space-8) 0;
+}
+
+.divider-icon::before,
+.divider-icon::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+.divider-icon > * {
+  margin: 0 var(--space-4);
+  color: var(--color-gold);
+}
+
+/* ===== SPECIAL EFFECTS ===== */
+
+/* Gold text glow on hover */
+.hover-gold-glow {
+  transition: all var(--transition-base);
+}
+
+.hover-gold-glow:hover {
+  color: var(--color-gold);
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+/* Lift on hover */
+.hover-lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ===== LOADING STATES ===== */
+.loading {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--color-gold);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* ===== FOCUS STYLES ===== */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* ===== SELECTION STYLES ===== */
+::selection {
+  background: var(--color-gold-subtle);
+  color: var(--color-navy);
+}
+
+::-moz-selection {
+  background: var(--color-gold-subtle);
+  color: var(--color-navy);
+}
+
+/* ===== SCROLLBAR STYLES ===== */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: var(--border-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* ===== RESPONSIVE UTILITIES ===== */
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  @import url('print.css');
+}
+
+/* ===== DARK MODE OVERRIDES ===== */
+[data-theme="dark"] {
+  color-scheme: dark;
+  
+  body {
+    background-color: var(--color-navy-dark);
+    color: var(--color-gray-100);
+  }
+  
+  .glass {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
